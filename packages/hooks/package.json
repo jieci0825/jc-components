@@ -1,7 +1,7 @@
 {
-    "name": "@jc-components/utils",
+    "name": "@jc-components/hooks",
     "version": "0.1.0",
     "private": true,
-    "main": "index.ts",
+    "main": "src/index.ts",
     "scripts": {}
 }
