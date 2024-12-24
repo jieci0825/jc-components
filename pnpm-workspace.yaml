@@ -1,0 +1,6 @@
+packages:
+    # 组件测试代码
+    - play
+    # 存放组件文件
+    - docs
+    - "packages/**"

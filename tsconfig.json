@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "ESNext", // 打包模块类型ESNext
+        "declaration": false, // 默认不要自动生成声明文件
+        "noImplicitAny": false, // 支持类型不标注可以默认any
+        "removeComments": true, // 删除注释
+        "moduleResolution": "node", // 指定模块解析策略
+        "esModuleInterop": false, // 支持es6，commonjs 模块
+        "jsx": "preserve", // 保留jsx
+        "noLib": false, // 不处理类库
+        "target": "ES6", // 目标语言版本
+        "sourceMap": true, // 生成对应的map文件
+        "lib": ["ESNext", "DOM"], // 指定要包含在编译中的库文件
+        "allowSyntheticDefaultImports": true, // 允许从没有设置默认导出的模块中默认导入
+        "experimentalDecorators": true, // 启用装饰器
+        "forceConsistentCasingInFileNames": true, // 强制文件名区分大小写
+        "strict": true, // 是否启用所有严格类型检查选项
+        "skipLibCheck": true // 跳过类库声明文件的类型检查
+    },
+    "exclude": ["node_modules", "**/__test__", "dist/**"] // 排除类库
+}
