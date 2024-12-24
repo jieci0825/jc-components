@@ -10,6 +10,7 @@ export interface FormItemConfig {
     slotName?: string // 插槽名称
     defaultValue?: any // 默认值
     numberValue?: boolean // 数字类型的值
+    [k: string]: any
 }
 
 // props

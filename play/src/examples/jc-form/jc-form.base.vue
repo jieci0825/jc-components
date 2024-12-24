@@ -3,18 +3,33 @@ import { JcForm, type JcFormProps } from '@jc-components/components'
 import { reactive } from 'vue'
 
 const formData = reactive({
-    keyword: ''
+    name: '',
+    password: '',
+    description: ''
 })
 
 const formConfig: JcFormProps = {
     model: formData,
     formItems: [
         {
-            label: '关键词',
-            prop: 'keyword',
+            label: '用户名',
+            prop: 'name',
             type: 'input',
-            placeholder: '请输入关键词',
-            numberValue: true
+            placeholder: '请输入用户名'
+        },
+        {
+            label: '密码',
+            prop: 'password',
+            type: 'password',
+            placeholder: '请输入密码',
+            showPassword: true
+        },
+        // todo age
+        {
+            label: '个人简介',
+            prop: 'description',
+            type: 'textarea',
+            placeholder: '请输入个人简介'
         }
     ]
 }

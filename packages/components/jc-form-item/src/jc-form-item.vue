@@ -21,7 +21,9 @@ type DefaultProps = {
 const defaultProps: DefaultProps = {
     input: {},
     password: {},
-    textarea: {},
+    textarea: {
+        resize: 'none'
+    },
     select: {},
     radio: {},
     checkbox: {},
@@ -50,7 +52,6 @@ const innerProps = computed(() => {
     )
     return assembleProps
 })
-console.log(innerProps.value)
 const isInput = computed(() => {
     return formItemInputTypes.includes(props.type as FormItemInputTypes)
 })
