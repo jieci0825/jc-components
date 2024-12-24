@@ -64,7 +64,7 @@ const isInput = computed(() => {
             <slot name="label">
                 <!-- 没有传递则使用默认结构 -->
                 <!-- todo: 实现tip -->
-                <span></span>
+                <span>{{ props.label }}</span>
             </slot>
         </template>
         <!-- item -->

@@ -1,11 +1,18 @@
 <script setup lang="ts">
 import { JcForm, type JcFormProps } from '@jc-components/components'
+import type { FormRules } from 'element-plus'
 import { reactive } from 'vue'
 
 const formData = reactive({
     name: '',
     password: '',
     description: ''
+})
+type FormData = typeof formData
+
+const rules = reactive<FormRules<FormData>>({
+    name: [{ trigger: 'blur', message: '请输入用户名', required: true }],
+    password: [{ trigger: 'blur', message: '请输入密码', required: true }]
 })
 
 const formConfig: JcFormProps = {
@@ -31,7 +38,8 @@ const formConfig: JcFormProps = {
             type: 'textarea',
             placeholder: '请输入个人简介'
         }
-    ]
+    ],
+    rules
 }
 
 // window.getData = () => {

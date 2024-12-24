@@ -1,3 +1,4 @@
+import type { FormRules } from 'element-plus'
 import type { FormItemTypes } from '../../jc-form-item'
 import type { ExtractPropTypes, PropType } from 'vue'
 
@@ -35,7 +36,7 @@ export const jcFormProps = {
      * @description: 规则
      */
     rules: {
-        type: Object
+        type: Object as PropType<FormRules>
     },
 
     /**
