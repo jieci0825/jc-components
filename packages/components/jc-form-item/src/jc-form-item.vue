@@ -34,8 +34,8 @@ const defaultProps: DefaultProps = {
     datetimerange: {}
 }
 
-const bem = createNamespace('form-item')
 const $attrs = useAttrs()
+const bem = createNamespace('form-item')
 const props = defineProps(jcFormItemProps)
 const emits = defineEmits(jcFormItemEmits)
 
@@ -79,5 +79,3 @@ const isInput = computed(() => {
         ></el-input>
     </el-form-item>
 </template>
-
-<style lang="scss"></style>

@@ -7,6 +7,7 @@ export interface FormItemConfig {
     prop: string // 表单字段
     type: FormItemTypes // 表单类型
     placeholder?: string // 占位符
+    required?: boolean // 是否必填
     span?: number // 占用宽度
     slotName?: string // 插槽名称
     defaultValue?: any // 默认值
@@ -99,6 +100,14 @@ export const jcFormProps = {
     readonly: {
         type: Boolean,
         default: false
+    },
+
+    /**
+     * @description: 是否启用页脚
+     */
+    showFooter: {
+        type: Boolean,
+        default: true
     },
 
     /**

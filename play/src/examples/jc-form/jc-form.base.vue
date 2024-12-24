@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import { reactive } from 'vue'
 import { JcForm, type JcFormProps } from '@jc-components/components'
 import type { FormRules } from 'element-plus'
-import { reactive } from 'vue'
 
 const formData = reactive({
     name: '',
@@ -49,8 +49,15 @@ const formConfig: JcFormProps = {
 
 <template>
     <div class="container">
-        <jc-form v-bind="formConfig"></jc-form>
+        <jc-form v-bind="formConfig"> </jc-form>
     </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.container {
+    width: 500px;
+    margin: 100px auto;
+    border: 1px solid #dfe4ea;
+    border-radius: 4px;
+}
+</style>
